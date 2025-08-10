@@ -1,6 +1,7 @@
 "use client";
 
 import DashboardHeader from "@/components/DashboardHeader";
+import OverviewDashboard from "@/components/OverviewDashboard";
 import { Separator } from "@radix-ui/react-select";
 import Image from "next/image";
 import { useState } from "react";
@@ -16,14 +17,14 @@ export default function Home() {
   };
 
   return (
-    <div className="flex flex-col p-10">
+    <div className="flex flex-col p-10 gap-y-15">
       <DashboardHeader
         menuIndexSelect={menuIndexSelect}
         handleTabClick={handleTabClick}
       />
       <div className="carousel">
         <div id="item1" className="carousel-item w-full">
-          a
+          <OverviewDashboard />
         </div>
         <div id="item2" className="carousel-item w-full">
           b

@@ -31,7 +31,7 @@ const UserProfileButton = () => {
 
       <ul
         tabIndex={0}
-        className="dropdown-content menu  rounded-box z-[1] w-56 p-2 shadow"
+        className="dropdown-content menu bg-white rounded-box z-[1] w-56 p-2 shadow"
         role="menu"
       >
         <li className="hover:bg-[#27b481]">
