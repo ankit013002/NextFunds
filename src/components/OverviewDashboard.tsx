@@ -1,6 +1,6 @@
 import React from "react";
 import Advertisement from "./Advertisement";
-import BalandCard from "./BalandCard";
+import BalanceCard from "./BalanceCard";
 import IncomeCard from "./IncomeCard";
 import ExpensesCard from "./ExpensesCard";
 import Statistics from "./Statistics";
@@ -11,7 +11,7 @@ const OverviewDashboard = () => {
     <div className="grid grid-cols-3 gap-4">
       <section className="col-span-2 grid grid-rows-[auto_1fr] gap-4">
         <div className="grid grid-cols-3 gap-4">
-          <BalandCard />
+          <BalanceCard />
           <IncomeCard />
           <ExpensesCard />
         </div>

@@ -3,13 +3,8 @@ import React from "react";
 const Statistics = () => {
   return (
     <div>
-      <div className="card bg-base-100 image-full shadow-sm h-[50vh]">
-        <figure>
-          <img
-            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-            alt="Shoes"
-          />
-        </figure>
+      <div className="card bg-base-100/0 image-full shadow-sm h-[50vh]">
+        <figure></figure>
         <div className="card-body">
           <h2 className="card-title">Card Title</h2>
           <p>
