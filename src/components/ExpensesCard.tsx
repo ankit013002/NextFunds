@@ -1,27 +1,23 @@
-import React from "react";
+import { FaCreditCard } from "react-icons/fa";
 
 const ExpensesCard = () => {
   return (
-    <div>
-      <div className="card bg-base-100 image-full shadow-sm h-[20vh]">
-        <figure>
-          <img
-            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-            alt="Shoes"
-          />
-        </figure>
-        <div className="card-body">
-          <h2 className="card-title">Card Title</h2>
-          <p>
-            A card component has a figure, a body part, and inside body there
-            are title and actions parts
-          </p>
-          <div className="card-actions justify-end">
-            <button className="btn btn-primary">Buy Now</button>
-          </div>
-        </div>
+    <div className="p-4 bg-white rounded-lg shadow-md border border-gray-200 h-full flex flex-col justify-between">
+      <div className="flex items-center justify-center w-8 h-8 rounded-full bg-red-100 text-red-600">
+        <FaCreditCard size={16} />
       </div>
-      Card with no im
+
+      <div className="mt-2 text-gray-600">Monthly expenses</div>
+
+      <div className="text-2xl font-bold">
+        $6,638
+        <span className="text-gray-400 font-normal">.72</span>
+      </div>
+
+      <div className="text-sm">
+        <span className="text-red-600 font-medium">-8.6%</span>{" "}
+        <span className="text-gray-400">compared to last month</span>
+      </div>
     </div>
   );
 };
