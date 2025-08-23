@@ -2,26 +2,27 @@ import React from "react";
 
 const Advertisement = () => {
   return (
-    <div>
-      <div className="card bg-base-100 image-full shadow-sm h-[20vh]">
-        <figure>
-          <img
-            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-            alt="Shoes"
-          />
-        </figure>
-        <div className="card-body">
-          <h2 className="card-title">Card Title</h2>
-          <p>
-            A card component has a figure, a body part, and inside body there
-            are title and actions parts
-          </p>
-          <div className="card-actions justify-end">
-            <button className="btn btn-primary">Buy Now</button>
-          </div>
+    <div className="card image-full shadow-md rounded-2xl h-full overflow-hidden">
+      <figure>
+        <img
+          className="w-full h-full object-bottom"
+          src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=1600&auto=format&fit=crop"
+          alt="Retirement background"
+        />
+      </figure>
+
+      <div className="card-body justify-between">
+        <h2 className="text-white text-3xl md:text-3xl font-bold leading-tight max-w-xl">
+          Secure Your Future with Our
+          <br /> Comprehensive Retirement Plans!
+        </h2>
+
+        <div className="card-actions">
+          <button className="btn bg-white text-[#27b481] border-0 rounded-xl px-5 hover:bg-[#27b481] hover:text-white">
+            Learn more
+          </button>
         </div>
       </div>
-      Card with no im
     </div>
   );
 };

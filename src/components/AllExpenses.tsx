@@ -1,27 +1,25 @@
 import React from "react";
+import ExpenseRadialBarChart from "./ExpenseRadialBarChart";
 
 const AllExpenses = () => {
   return (
-    <div>
-      <div className="card bg-base-100 image-full shadow-sm h-[50vh]">
-        <figure>
-          <img
-            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-            alt="Shoes"
-          />
-        </figure>
-        <div className="card-body">
-          <h2 className="card-title">Card Title</h2>
-          <p>
-            A card component has a figure, a body part, and inside body there
-            are title and actions parts
-          </p>
-          <div className="card-actions justify-end">
-            <button className="btn btn-primary">Buy Now</button>
-          </div>
+    <div className="p-4 bg-white rounded-lg shadow-md border border-gray-200 h-full flex flex-col justify-between">
+      <div className="font-bold">All expenses</div>
+      <div className="grid grid-cols-3 w-full">
+        <div className="flex flex-col justify-center items-center">
+          <div>Daily</div>
+          <div>$682.20</div>
+        </div>
+        <div className="flex flex-col justify-center items-center">
+          <div>Weekly</div>
+          <div>$2183.26</div>
+        </div>
+        <div className="flex flex-col justify-center items-center">
+          <div>Monthly</div>
+          <div>$6638.72</div>
         </div>
       </div>
-      Card with no im
+      <ExpenseRadialBarChart />
     </div>
   );
 };

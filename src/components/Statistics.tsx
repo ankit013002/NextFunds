@@ -3,21 +3,11 @@ import StatisticsLineChart from "./charts/StatisticsLineChart";
 
 const Statistics = () => {
   return (
-    <div>
-      <div className="card bg-base-100/0 image-full shadow-sm h-[50vh]">
+    <div className="p-4 bg-white rounded-lg shadow-md border border-gray-200 h-full flex flex-col">
+      <div className="font-bold px-8">Statistics</div>
+      <div className="h-full">
         <StatisticsLineChart />
-        <div className="card-body">
-          <h2 className="card-title">Card Title</h2>
-          <p>
-            A card component has a figure, a body part, and inside body there
-            are title and actions parts
-          </p>
-          <div className="card-actions justify-end">
-            <button className="btn btn-primary">Buy Now</button>
-          </div>
-        </div>
       </div>
-      Card with no im
     </div>
   );
 };
