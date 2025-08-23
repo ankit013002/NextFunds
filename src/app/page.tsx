@@ -2,6 +2,7 @@
 
 import DashboardHeader from "@/components/DashboardHeader";
 import OverviewDashboard from "@/components/OverviewDashboard";
+import WalletDashboard from "@/components/WalletDashboard";
 import { Separator } from "@radix-ui/react-select";
 import Image from "next/image";
 import { useState } from "react";
@@ -27,7 +28,7 @@ export default function Home() {
           <OverviewDashboard />
         </div>
         <div id="item2" className="carousel-item w-full">
-          b
+          <WalletDashboard />
         </div>
         <div id="item3" className="carousel-item w-full">
           c
